@@ -12,6 +12,7 @@ The script has GUI menu with numerous options to configurate your status.
 # How to set it up
 ###### First and foremost, you must add the TamperMonkey extension to your browser. You can find it [here](https://www.tampermonkey.net).
 ###### [Video](https://www.youtube.com/watch?v=LnBnm_tZlyU) tutorial showing how to get your Discord token.
+###### enable developer mode in chrome://extensions/ or where firefox has extensions
 Open the TamperMonkey menu on your extensions panel and press `Create a new script...`.
 
 Delete all the code that is already in the editor and paste in the following code:
@@ -28,7 +29,7 @@ Delete all the code that is already in the editor and paste in the following cod
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // ==/UserScript==
 
-$.get("https://raw.githubusercontent.com/alexvermaning0/lyrics-status/main/LyricsStatus.js", (d) => eval(d));
+$.get("(https://raw.githubusercontent.com/alexvermaning0/discord-lyrics/refs/heads/main/LyricsStatus.js)", (d) => eval(d));
 ```
 Then click on the `File` dropdown in the top left, and press `Save`.
 
